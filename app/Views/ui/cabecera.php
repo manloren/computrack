@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
   <div class="container-fluid">
     <a class="navbar-brand" href="<?= base_url('/clientes')?>">
-        <img class="img-fluid w-50" src="<?= base_url('/imagenes/logo.png')?>" alt="">
+        <img class="img-fluid w-85" src="<?= base_url('/imagenes/logo.png')?>" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
