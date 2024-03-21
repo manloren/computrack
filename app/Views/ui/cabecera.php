@@ -9,7 +9,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?= base_url('/ordenes')?>">Órdenes</a>
+          <a class="nav-link" aria-current="page" href="<?= base_url('/ordenes')?>">Órdenes</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?= base_url('/clientes')?>">Clientes</a>
