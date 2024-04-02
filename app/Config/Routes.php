@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
+$routes->addRedirect('/', 'clientes');
 
 $routes->group('clientes', static function ($routes) {
     $routes->get('/', 'ClienteController::listado'); // Obtener todos los clientes
@@ -23,6 +23,8 @@ $routes->group('dispositivos', static function ($routes) {
     $routes->get('obtenerClientes', 'DispositivoController::obtenerClientes');
     $routes->get('obtenerNombreClientePorCedula', 'DispositivoController::obtenerNombreClientePorCedula');
     $routes->post('guardar', 'DispositivoController::registrarDispositivo');
+
+    $routes->get('borrar/(:num)', 'DispositivoController::borrar/$1'); // Borrar dispositivo por id
 });
 
 $routes->group('ordenes', static function ($routes) {
@@ -30,4 +32,10 @@ $routes->group('ordenes', static function ($routes) {
     $routes->get('nueva', 'OrdenController::crear');
     $routes->post('buscarDispositivos', 'OrdenController::buscarDispositivos');
     $routes->post('guardarOrden', 'OrdenController::guardarOrden');
+    $routes->post('actualizar_estado', 'OrdenController::actualizarEstado');
+});
+
+$routes->group('facturas', static function ($routes) {
+    $routes->addRedirect('/', 'facturas/crear');
+    $routes->get('crear', 'FacturaController::crear');
 });
