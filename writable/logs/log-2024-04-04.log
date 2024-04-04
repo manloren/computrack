@@ -2,3 +2,7 @@ INFO - 2024-04-04 13:23:34 --> REDIRECTED ROUTE at http://localhost/computrack/p
 INFO - 2024-04-04 14:10:39 --> REDIRECTED ROUTE at http://localhost/computrack/public/facturas/crear
 INFO - 2024-04-04 14:21:18 --> REDIRECTED ROUTE at http://localhost/computrack/public/facturas/crear
 INFO - 2024-04-04 14:22:51 --> REDIRECTED ROUTE at http://localhost/computrack/public/facturas/crear
+INFO - 2024-04-04 15:52:29 --> REDIRECTED ROUTE at http://192.168.148.117/computrack/public/facturas/crear
+INFO - 2024-04-04 15:53:21 --> REDIRECTED ROUTE at http://192.168.148.117/computrack/public/clientes
+INFO - 2024-04-04 16:00:03 --> REDIRECTED ROUTE at http://192.168.148.117/computrack/public/facturas/crear
+INFO - 2024-04-04 16:00:54 --> REDIRECTED ROUTE at http://192.168.148.117/computrack/public/facturas/crear

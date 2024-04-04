@@ -6,45 +6,53 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-6 mb-3">
             <div class="form-group">
-                <label for="">Cédula</label>
-                <input type="text" id="cedula" class="form-control" autocomplete="off">
-                <button id="btnBuscarCliente" class="btn btn-primary">Buscar cliente</button>
+                <label for="cedula">Cédula</label>
+                <div class="input-group">
+                    <input type="text" id="cedula" class="form-control" autocomplete="off">
+                    <button id="btnBuscarCliente" class="btn btn-primary">Buscar cliente</button>
+                </div>
             </div>
         </div>
-        <div class="col-lg-8">
-            <h3 id="nombreCliente"></h3>
+        <div class="col-lg-6 mb-3">
+            <h3 id="nombreCliente" class="mt-lg-0 mt-3"></h3>
         </div>
     </div>
     <div class="row mt-4">
-        <table id="tablaDispositivos" class="table table-hover table-sm table-primary">
-            <thead>
-                <th>Tipo de Dispositivo</th>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Color</th>
-                <th>Serial</th>
-                <th>Acciones</th>
-            </thead>
-            <tbody>
-                <!-- Aquí se llenarán los datos dinámicamente -->
-            </tbody>
-        </table>
+        <div class="col">
+            <div class="table-responsive">
+                <table id="tablaDispositivos" class="table table-hover table-sm table-primary">
+                    <thead>
+                        <tr>
+                            <th>Tipo de Dispositivo</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Color</th>
+                            <th>Serial</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se llenarán los datos dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
     <form action="<?= site_url('ordenes/guardarOrden') ?>" method="post" id="formularioOrden">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 mb-3">
                 <div class="form-group">
-                    <label for="">Observaciones</label>
+                    <label for="observaciones">Observaciones</label>
                     <textarea name="observaciones" id="observaciones" rows="4" class="form-control"></textarea>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 mb-3">
                 <div class="form-group">
-                    <label for="">Dispositivo</label>
-                    <span class="badge text-bg-info" id="dispositivoSeleccionado"></span>
+                    <label for="dispositivo_id">Dispositivo</label>
+                    <span class="badge text-bg-info d-block" id="dispositivoSeleccionado"></span>
                     <!-- Agregar un campo oculto para almacenar el ID del dispositivo -->
                     <input type="hidden" name="dispositivo_id" id="dispositivo_id">
                 </div>
